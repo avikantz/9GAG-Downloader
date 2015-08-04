@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5939E1751B7115FD00F29FBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939E1741B7115FD00F29FBD /* AppDelegate.m */; };
+		5939E1781B7115FD00F29FBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939E1771B7115FD00F29FBD /* main.m */; };
+		5939E17B1B7115FD00F29FBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939E17A1B7115FD00F29FBD /* ViewController.m */; };
+		5939E17D1B7115FD00F29FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5939E17C1B7115FD00F29FBD /* Assets.xcassets */; };
+		5939E1801B7115FD00F29FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5939E17E1B7115FD00F29FBD /* Main.storyboard */; };
+		5939E18B1B7115FD00F29FBD /* _GAG_DownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939E18A1B7115FD00F29FBD /* _GAG_DownloaderTests.m */; };
+		5939E1961B7115FE00F29FBD /* _GAG_DownloaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939E1951B7115FE00F29FBD /* _GAG_DownloaderUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5939E1871B7115FD00F29FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5939E1681B7115FD00F29FBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5939E16F1B7115FD00F29FBD;
+			remoteInfo = "9GAG Downloader";
+		};
+		5939E1921B7115FE00F29FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5939E1681B7115FD00F29FBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5939E16F1B7115FD00F29FBD;
+			remoteInfo = "9GAG Downloader";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5939E1701B7115FD00F29FBD /* 9GAG Downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "9GAG Downloader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5939E1731B7115FD00F29FBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5939E1741B7115FD00F29FBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5939E1771B7115FD00F29FBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5939E1791B7115FD00F29FBD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5939E17A1B7115FD00F29FBD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5939E17C1B7115FD00F29FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5939E17F1B7115FD00F29FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5939E1811B7115FD00F29FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5939E1861B7115FD00F29FBD /* 9GAG DownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "9GAG DownloaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5939E18A1B7115FD00F29FBD /* _GAG_DownloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _GAG_DownloaderTests.m; sourceTree = "<group>"; };
+		5939E18C1B7115FD00F29FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5939E1911B7115FE00F29FBD /* 9GAG DownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "9GAG DownloaderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5939E1951B7115FE00F29FBD /* _GAG_DownloaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _GAG_DownloaderUITests.m; sourceTree = "<group>"; };
+		5939E1971B7115FE00F29FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5939E16D1B7115FD00F29FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5939E1831B7115FD00F29FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5939E18E1B7115FE00F29FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5939E1671B7115FD00F29FBD = {
+			isa = PBXGroup;
+			children = (
+				5939E1721B7115FD00F29FBD /* 9GAG Downloader */,
+				5939E1891B7115FD00F29FBD /* 9GAG DownloaderTests */,
+				5939E1941B7115FE00F29FBD /* 9GAG DownloaderUITests */,
+				5939E1711B7115FD00F29FBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5939E1711B7115FD00F29FBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5939E1701B7115FD00F29FBD /* 9GAG Downloader.app */,
+				5939E1861B7115FD00F29FBD /* 9GAG DownloaderTests.xctest */,
+				5939E1911B7115FE00F29FBD /* 9GAG DownloaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5939E1721B7115FD00F29FBD /* 9GAG Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				5939E1731B7115FD00F29FBD /* AppDelegate.h */,
+				5939E1741B7115FD00F29FBD /* AppDelegate.m */,
+				5939E1791B7115FD00F29FBD /* ViewController.h */,
+				5939E17A1B7115FD00F29FBD /* ViewController.m */,
+				5939E17C1B7115FD00F29FBD /* Assets.xcassets */,
+				5939E17E1B7115FD00F29FBD /* Main.storyboard */,
+				5939E1811B7115FD00F29FBD /* Info.plist */,
+				5939E1761B7115FD00F29FBD /* Supporting Files */,
+			);
+			path = "9GAG Downloader";
+			sourceTree = "<group>";
+		};
+		5939E1761B7115FD00F29FBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5939E1771B7115FD00F29FBD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5939E1891B7115FD00F29FBD /* 9GAG DownloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				5939E18A1B7115FD00F29FBD /* _GAG_DownloaderTests.m */,
+				5939E18C1B7115FD00F29FBD /* Info.plist */,
+			);
+			path = "9GAG DownloaderTests";
+			sourceTree = "<group>";
+		};
+		5939E1941B7115FE00F29FBD /* 9GAG DownloaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5939E1951B7115FE00F29FBD /* _GAG_DownloaderUITests.m */,
+				5939E1971B7115FE00F29FBD /* Info.plist */,
+			);
+			path = "9GAG DownloaderUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5939E16F1B7115FD00F29FBD /* 9GAG Downloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5939E19A1B7115FE00F29FBD /* Build configuration list for PBXNativeTarget "9GAG Downloader" */;
+			buildPhases = (
+				5939E16C1B7115FD00F29FBD /* Sources */,
+				5939E16D1B7115FD00F29FBD /* Frameworks */,
+				5939E16E1B7115FD00F29FBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "9GAG Downloader";
+			productName = "9GAG Downloader";
+			productReference = 5939E1701B7115FD00F29FBD /* 9GAG Downloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5939E1851B7115FD00F29FBD /* 9GAG DownloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5939E19D1B7115FE00F29FBD /* Build configuration list for PBXNativeTarget "9GAG DownloaderTests" */;
+			buildPhases = (
+				5939E1821B7115FD00F29FBD /* Sources */,
+				5939E1831B7115FD00F29FBD /* Frameworks */,
+				5939E1841B7115FD00F29FBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5939E1881B7115FD00F29FBD /* PBXTargetDependency */,
+			);
+			name = "9GAG DownloaderTests";
+			productName = "9GAG DownloaderTests";
+			productReference = 5939E1861B7115FD00F29FBD /* 9GAG DownloaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5939E1901B7115FE00F29FBD /* 9GAG DownloaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5939E1A01B7115FE00F29FBD /* Build configuration list for PBXNativeTarget "9GAG DownloaderUITests" */;
+			buildPhases = (
+				5939E18D1B7115FE00F29FBD /* Sources */,
+				5939E18E1B7115FE00F29FBD /* Frameworks */,
+				5939E18F1B7115FE00F29FBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5939E1931B7115FE00F29FBD /* PBXTargetDependency */,
+			);
+			name = "9GAG DownloaderUITests";
+			productName = "9GAG DownloaderUITests";
+			productReference = 5939E1911B7115FE00F29FBD /* 9GAG DownloaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5939E1681B7115FD00F29FBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = avikantz;
+				TargetAttributes = {
+					5939E16F1B7115FD00F29FBD = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					5939E1851B7115FD00F29FBD = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 5939E16F1B7115FD00F29FBD;
+					};
+					5939E1901B7115FE00F29FBD = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 5939E16F1B7115FD00F29FBD;
+					};
+				};
+			};
+			buildConfigurationList = 5939E16B1B7115FD00F29FBD /* Build configuration list for PBXProject "9GAG Downloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5939E1671B7115FD00F29FBD;
+			productRefGroup = 5939E1711B7115FD00F29FBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5939E16F1B7115FD00F29FBD /* 9GAG Downloader */,
+				5939E1851B7115FD00F29FBD /* 9GAG DownloaderTests */,
+				5939E1901B7115FE00F29FBD /* 9GAG DownloaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5939E16E1B7115FD00F29FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5939E17D1B7115FD00F29FBD /* Assets.xcassets in Resources */,
+				5939E1801B7115FD00F29FBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5939E1841B7115FD00F29FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5939E18F1B7115FE00F29FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5939E16C1B7115FD00F29FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5939E17B1B7115FD00F29FBD /* ViewController.m in Sources */,
+				5939E1781B7115FD00F29FBD /* main.m in Sources */,
+				5939E1751B7115FD00F29FBD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5939E1821B7115FD00F29FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5939E18B1B7115FD00F29FBD /* _GAG_DownloaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5939E18D1B7115FE00F29FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5939E1961B7115FE00F29FBD /* _GAG_DownloaderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5939E1881B7115FD00F29FBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5939E16F1B7115FD00F29FBD /* 9GAG Downloader */;
+			targetProxy = 5939E1871B7115FD00F29FBD /* PBXContainerItemProxy */;
+		};
+		5939E1931B7115FE00F29FBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5939E16F1B7115FD00F29FBD /* 9GAG Downloader */;
+			targetProxy = 5939E1921B7115FE00F29FBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5939E17E1B7115FD00F29FBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5939E17F1B7115FD00F29FBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5939E1981B7115FE00F29FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5939E1991B7115FE00F29FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5939E19B1B7115FE00F29FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "9GAG Downloader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avikantz.-GAG-Downloader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5939E19C1B7115FE00F29FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "9GAG Downloader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avikantz.-GAG-Downloader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5939E19E1B7115FE00F29FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "9GAG DownloaderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avikantz.-GAG-DownloaderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/9GAG Downloader.app/Contents/MacOS/9GAG Downloader";
+			};
+			name = Debug;
+		};
+		5939E19F1B7115FE00F29FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "9GAG DownloaderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avikantz.-GAG-DownloaderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/9GAG Downloader.app/Contents/MacOS/9GAG Downloader";
+			};
+			name = Release;
+		};
+		5939E1A11B7115FE00F29FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "9GAG DownloaderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avikantz.-GAG-DownloaderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "9GAG Downloader";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		5939E1A21B7115FE00F29FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "9GAG DownloaderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avikantz.-GAG-DownloaderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "9GAG Downloader";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5939E16B1B7115FD00F29FBD /* Build configuration list for PBXProject "9GAG Downloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5939E1981B7115FE00F29FBD /* Debug */,
+				5939E1991B7115FE00F29FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5939E19A1B7115FE00F29FBD /* Build configuration list for PBXNativeTarget "9GAG Downloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5939E19B1B7115FE00F29FBD /* Debug */,
+				5939E19C1B7115FE00F29FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5939E19D1B7115FE00F29FBD /* Build configuration list for PBXNativeTarget "9GAG DownloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5939E19E1B7115FE00F29FBD /* Debug */,
+				5939E19F1B7115FE00F29FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5939E1A01B7115FE00F29FBD /* Build configuration list for PBXNativeTarget "9GAG DownloaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5939E1A11B7115FE00F29FBD /* Debug */,
+				5939E1A21B7115FE00F29FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5939E1681B7115FD00F29FBD /* Project object */;
+}
