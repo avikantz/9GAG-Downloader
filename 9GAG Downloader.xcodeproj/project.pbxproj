@@ -14,6 +14,11 @@
 		5939E1801B7115FD00F29FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5939E17E1B7115FD00F29FBD /* Main.storyboard */; };
 		5939E18B1B7115FD00F29FBD /* _GAG_DownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939E18A1B7115FD00F29FBD /* _GAG_DownloaderTests.m */; };
 		5939E1961B7115FE00F29FBD /* _GAG_DownloaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939E1951B7115FE00F29FBD /* _GAG_DownloaderUITests.m */; };
+		5939E1A91B71171500F29FBD /* GagImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939E1A81B71171500F29FBD /* GagImage.m */; };
+		5980169B1B71C3A00022CC67 /* GRSeparatorLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 598016941B71C3A00022CC67 /* GRSeparatorLineView.m */; };
+		5980169C1B71C3A00022CC67 /* GRVibrantTitlebarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 598016961B71C3A00022CC67 /* GRVibrantTitlebarView.m */; };
+		5980169D1B71C3A00022CC67 /* GRVibrantTitlebarWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 598016981B71C3A00022CC67 /* GRVibrantTitlebarWindow.m */; };
+		5980169E1B71C3A00022CC67 /* GRVibrantTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5980169A1B71C3A00022CC67 /* GRVibrantTitleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,16 @@
 		5939E1911B7115FE00F29FBD /* 9GAG DownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "9GAG DownloaderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5939E1951B7115FE00F29FBD /* _GAG_DownloaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _GAG_DownloaderUITests.m; sourceTree = "<group>"; };
 		5939E1971B7115FE00F29FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5939E1A71B71171500F29FBD /* GagImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GagImage.h; sourceTree = "<group>"; };
+		5939E1A81B71171500F29FBD /* GagImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GagImage.m; sourceTree = "<group>"; };
+		598016931B71C3A00022CC67 /* GRSeparatorLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRSeparatorLineView.h; sourceTree = "<group>"; };
+		598016941B71C3A00022CC67 /* GRSeparatorLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRSeparatorLineView.m; sourceTree = "<group>"; };
+		598016951B71C3A00022CC67 /* GRVibrantTitlebarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRVibrantTitlebarView.h; sourceTree = "<group>"; };
+		598016961B71C3A00022CC67 /* GRVibrantTitlebarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRVibrantTitlebarView.m; sourceTree = "<group>"; };
+		598016971B71C3A00022CC67 /* GRVibrantTitlebarWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRVibrantTitlebarWindow.h; sourceTree = "<group>"; };
+		598016981B71C3A00022CC67 /* GRVibrantTitlebarWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRVibrantTitlebarWindow.m; sourceTree = "<group>"; };
+		598016991B71C3A00022CC67 /* GRVibrantTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRVibrantTitleView.h; sourceTree = "<group>"; };
+		5980169A1B71C3A00022CC67 /* GRVibrantTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRVibrantTitleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +116,14 @@
 			children = (
 				5939E1731B7115FD00F29FBD /* AppDelegate.h */,
 				5939E1741B7115FD00F29FBD /* AppDelegate.m */,
+				5939E1A71B71171500F29FBD /* GagImage.h */,
+				5939E1A81B71171500F29FBD /* GagImage.m */,
 				5939E1791B7115FD00F29FBD /* ViewController.h */,
 				5939E17A1B7115FD00F29FBD /* ViewController.m */,
 				5939E17C1B7115FD00F29FBD /* Assets.xcassets */,
 				5939E17E1B7115FD00F29FBD /* Main.storyboard */,
 				5939E1811B7115FD00F29FBD /* Info.plist */,
+				598016921B71C3A00022CC67 /* GRVibrantTitlebarWindow */,
 				5939E1761B7115FD00F29FBD /* Supporting Files */,
 			);
 			path = "9GAG Downloader";
@@ -135,6 +153,21 @@
 				5939E1971B7115FE00F29FBD /* Info.plist */,
 			);
 			path = "9GAG DownloaderUITests";
+			sourceTree = "<group>";
+		};
+		598016921B71C3A00022CC67 /* GRVibrantTitlebarWindow */ = {
+			isa = PBXGroup;
+			children = (
+				598016931B71C3A00022CC67 /* GRSeparatorLineView.h */,
+				598016941B71C3A00022CC67 /* GRSeparatorLineView.m */,
+				598016951B71C3A00022CC67 /* GRVibrantTitlebarView.h */,
+				598016961B71C3A00022CC67 /* GRVibrantTitlebarView.m */,
+				598016971B71C3A00022CC67 /* GRVibrantTitlebarWindow.h */,
+				598016981B71C3A00022CC67 /* GRVibrantTitlebarWindow.m */,
+				598016991B71C3A00022CC67 /* GRVibrantTitleView.h */,
+				5980169A1B71C3A00022CC67 /* GRVibrantTitleView.m */,
+			);
+			path = GRVibrantTitlebarWindow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5980169B1B71C3A00022CC67 /* GRSeparatorLineView.m in Sources */,
 				5939E17B1B7115FD00F29FBD /* ViewController.m in Sources */,
 				5939E1781B7115FD00F29FBD /* main.m in Sources */,
+				5980169E1B71C3A00022CC67 /* GRVibrantTitleView.m in Sources */,
 				5939E1751B7115FD00F29FBD /* AppDelegate.m in Sources */,
+				5939E1A91B71171500F29FBD /* GagImage.m in Sources */,
+				5980169C1B71C3A00022CC67 /* GRVibrantTitlebarView.m in Sources */,
+				5980169D1B71C3A00022CC67 /* GRVibrantTitlebarWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +527,7 @@
 				5939E19C1B7115FE00F29FBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5939E19D1B7115FE00F29FBD /* Build configuration list for PBXNativeTarget "9GAG DownloaderTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +536,7 @@
 				5939E19F1B7115FE00F29FBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5939E1A01B7115FE00F29FBD /* Build configuration list for PBXNativeTarget "9GAG DownloaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +545,7 @@
 				5939E1A21B7115FE00F29FBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

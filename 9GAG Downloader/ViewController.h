@@ -10,6 +10,13 @@
 
 @interface ViewController : NSViewController
 
+@property (weak) IBOutlet NSSegmentedControl *sectionPicker;
+@property (weak) IBOutlet NSSegmentedControl *sizePicker;
+@property (weak) IBOutlet NSTextField *pathField;
+@property (weak) IBOutlet NSTextField *numberOfItemsField;
+@property (weak) IBOutlet NSProgressIndicator *progressView;
+@property (weak) IBOutlet NSTextField *startIDField;
+@property (weak) IBOutlet NSButton *saveButton;
 
 @end
 
