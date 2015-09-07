@@ -19,8 +19,6 @@
 @property (strong, nonatomic) NSString *ImageLargeURL;
 @property (strong, nonatomic) NSString *VideoGIFURL;
 
-@property BOOL isGIF;
-
 @property NSInteger VotesCount;
 
 -(instancetype)initWithData:(id)data;
