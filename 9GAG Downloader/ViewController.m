@@ -62,17 +62,29 @@
 					next = [[data valueForKey:@"paging"] valueForKey:@"next"];
 					
 					for (GagImage *gag in gagImages) {
-						NSData *image = nil;
-						NSString *imageURL = (_sizePicker.selectedSegment == 0) ? gag.ImageNormalURL : gag.ImageLargeURL;
-						image = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageURL]];
-						if (image)
-							[image writeToFile:[self imagesPathForFileName:[imageURL lastPathComponent]] atomically:YES];
-						currentSaveTitle = [NSString stringWithFormat:@"Saving: '%@'", [imageURL lastPathComponent]];
-						dispatch_async(dispatch_get_main_queue(), ^{
-							[_progressView incrementBy:incProgress];
-							[_saveButton setTitle:currentSaveTitle];
-						});
-						savedCount += 1;
+						if (gag.isGIF) {
+							NSData *video = [NSData dataWithContentsOfURL:[NSURL URLWithString:gag.VideoGIFURL]];
+							if (video)
+								[video writeToFile:[self imagesPathForFileName:[gag.VideoGIFURL lastPathComponent]] atomically:YES];
+							currentSaveTitle = [NSString stringWithFormat:@"Saving GIF: '%@'", [gag.VideoGIFURL lastPathComponent]];
+							dispatch_async(dispatch_get_main_queue(), ^{
+								[_progressView incrementBy:incProgress];
+								[_saveButton setTitle:currentSaveTitle];
+							});
+						}
+						else {
+							NSData *image = nil;
+							NSString *imageURL = (_sizePicker.selectedSegment == 0) ? gag.ImageNormalURL : gag.ImageLargeURL;
+							image = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageURL]];
+							if (image)
+								[image writeToFile:[self imagesPathForFileName:[imageURL lastPathComponent]] atomically:YES];
+							currentSaveTitle = [NSString stringWithFormat:@"Saving: '%@'", [imageURL lastPathComponent]];
+							dispatch_async(dispatch_get_main_queue(), ^{
+								[_progressView incrementBy:incProgress];
+								[_saveButton setTitle:currentSaveTitle];
+							});
+							savedCount += 1;
+						}
 					}
 				}
 			}

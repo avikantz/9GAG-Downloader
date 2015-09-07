@@ -21,8 +21,13 @@
 		self.ImageLargeURL = [[data valueForKey:@"images"] valueForKey:@"large"];
 		
 		if ([self.ImageLargeURL containsString:@"460c"]) {
+			self.isGIF = NO;
 			self.ImageNormalURL = [NSString stringWithFormat:@"http://img-9gag-fun.9cache.com/photo/%@_460s.jpg", self.ID];
 			self.ImageLargeURL = [NSString stringWithFormat:@"http://img-9gag-fun.9cache.com/photo/%@_700b.jpg", self.ID];
+		}
+		else {
+			self.isGIF = YES;
+			self.VideoGIFURL = [NSString stringWithFormat:@"http://img-9gag-fun.9cache.com/photo/%@_460sv.mp4", self.ID];
 		}
 		
 		self.VotesCount = [[[data valueForKey:@"votes"] valueForKey:@"count"] integerValue];
