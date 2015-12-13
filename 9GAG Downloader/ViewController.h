@@ -17,6 +17,8 @@
 @property (weak) IBOutlet NSProgressIndicator *progressView;
 @property (weak) IBOutlet NSTextField *startIDField;
 @property (weak) IBOutlet NSButton *saveButton;
+@property (weak) IBOutlet NSProgressIndicator *activitySpinner;
+@property (weak) IBOutlet NSButton *downloadVideosButton;
+
 
 @end
-

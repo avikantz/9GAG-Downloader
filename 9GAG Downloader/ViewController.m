@@ -19,6 +19,8 @@
 
 	// Do any additional setup after loading the view.
 	
+	_activitySpinner.hidden = YES;
+	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	if ([defaults valueForKey:@"PATH"]) {
 		_pathField.stringValue = [defaults valueForKey:@"PATH"];
@@ -30,6 +32,9 @@
 
 - (IBAction)saveAction:(id)sender {
 	
+	_activitySpinner.hidden = NO;
+	[_activitySpinner startAnimation:self];
+	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	[defaults setObject:_pathField.stringValue forKey:@"PATH"];
 	[defaults setObject:_numberOfItemsField.stringValue	forKey:@"ITEMS"];
@@ -37,7 +42,7 @@
 	
 	_progressView.doubleValue = 0;
 	incProgress = 100/(_numberOfItemsField.integerValue);
-	
+
 	NSString *section;
 	switch (_sectionPicker.selectedSegment) {
 		case 1: section = @"trending";
@@ -57,16 +62,22 @@
 			if (urlData) {
 				NSData *data = [NSJSONSerialization JSONObjectWithData:urlData options:kNilOptions error:&error];
 				
+				dispatch_async(dispatch_get_main_queue(), ^{
+					_activitySpinner.hidden = YES;
+				});
+				
 				if (!error && data) {
 					NSMutableArray *gagImages = [GagImage returnArrayFromData:[data valueForKey:@"data"]];
 					next = [[data valueForKey:@"paging"] valueForKey:@"next"];
 					
 					for (GagImage *gag in gagImages) {
 						
-						NSData *video = [NSData dataWithContentsOfURL:[NSURL URLWithString:gag.VideoGIFURL]];
-						if (video) {
+						NSData *video = nil;
+						if (self.downloadVideosButton.state == NSOnState)
+							video = [NSData dataWithContentsOfURL:[NSURL URLWithString:gag.VideoGIFURL]];
+						if (video != nil) {
 							[video writeToFile:[self imagesPathForFileName:[gag.VideoGIFURL lastPathComponent]] atomically:YES];
-							currentSaveTitle = [NSString stringWithFormat:@"Saving GIF: '%@'", [gag.VideoGIFURL lastPathComponent]];
+							currentSaveTitle = [NSString stringWithFormat:@"Saving GIF (Video): '%@'", [gag.VideoGIFURL lastPathComponent]];
 							dispatch_async(dispatch_get_main_queue(), ^{
 								[_progressView incrementBy:incProgress];
 								[_saveButton setTitle:currentSaveTitle];
